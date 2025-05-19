@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset Bay 5-Bedroom Rental</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            background: url('/static/img/5-bedroom-cover2.png') center/cover no-repeat;
+            background-position: center 25%;
+            color: white;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .amenity-group h4 {
+            margin-top: 30px;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .property-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        #amenitiesGallery img {
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        h2,
+        h4 {
+            color: #2c3e50;
+        }
+
+        ul {
+            padding-left: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .modal-content img {
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        .nav-tabs .nav-link {
+            color: #fff;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+        .carousel-inner .f {
+            scale:0.7;
+            height:auto;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Sunset Bay New York Rental</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#access">Guest Access</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="overview">
+        <div>
+            <h1 data-aos="fade-down">5-Bedroom Waterfront Paradise</h1>
+            <p data-aos="fade-up">Private. Scenic. Luxurious. Nestled on 600ft of waterfront between Lake George & Saratoga Springs.
+            </p>
+            <button class="btn btn-light mt-4" data-bs-toggle="modal" data-bs-target="#imageGalleryModal">
+                See All Images
+            </button>
+        </div>
+    </section>
+
+    <section class="container py-5" id="overview">
+        <div class="row align-items-center gx-5 gy-4" data-aos="fade-up">
+            <!-- Image Carousel -->
+            <div class="col-lg-6 order-lg-1 order-2">
+
+            </div>
+            <div class="col-md-6">
+                <div id="overviewCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="/static/img/5-bedroom-0.png" class="d-block w-100" alt="Rental Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/img/5-bedroom-1.png" class="d-block w-100" alt="Rental Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/img/5-bedroom-2.png" class="d-block w-100" alt="Rental Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/img/5-bedroom-3.png" class="d-block w-100" alt="Rental Image 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/img/5-bedroom-4.png" class="d-block w-100" alt="Rental Image 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/img/5-bedroom-5.png" class="d-block w-100" alt="Rental Image 6">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#overviewCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#overviewCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Text Overview -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Property Overview</h2>
+                <p class="lead text-muted">Your private, 5-bedroom riverside retreat with everything from a splash island
+                    to a rock wall.</p>
+                <ul class="list-unstyled">
+                    <li>• 600' of private waterfront with dock</li>
+                    <li>• 5-bedroom house + 1-bedroom apartment</li>
+                    <li>• Hot tub, grill patio, and huge grassy yard</li>
+                    <li>• Full kids’ playset and water toys</li>
+                    <li>• Basement arcade, ninja course, and more</li>
+                    <li>• Sleeps up to 14 guests comfortably</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-light py-5" id="amenities">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Amenities</h2>
+
+            <!-- First Two Amenity Groups -->
+            <div class="row gy-4 mb-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="p-4 bg-white shadow-sm rounded">
+                        <h4 class="fw-semibold mb-3">Outdoor Amenities</h4>
+                        <ul class="list-unstyled">
+                            <li>• 600' waterfront on 5 private acres</li>
+                            <li>• Private dock, splash island, hot tub</li>
+                            <li>• Kayaks, canoe, paddleboards</li>
+                            <li>• Weber & Blackstone grills</li>
+                            <li>• Firepit, hammock, Adirondack chairs</li>
+                            <li>• Patio furniture & picnic tables</li>
+                            <li>• Playset and large lawn</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="p-4 bg-white shadow-sm rounded">
+                        <h4 class="fw-semibold mb-3">Indoor Comforts</h4>
+                        <ul class="list-unstyled">
+                            <li>• 6 bedrooms, 4 full bathrooms</li>
+                            <li>• Fully stocked kitchen with double ovens</li>
+                            <li>• Coffee station (Keurig & drip)</li>
+                            <li>• Dishwasher, microwave, slow cooker</li>
+                            <li>• Children’s dinnerware & high chair</li>
+                            <li>• Room-darkening shades, linens, hair dryers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Guest Access -->
+<!-- Guest Access -->
+<section class="container py-5" id="access">
+  <h2 class="text-center mb-4" data-aos="fade-up">Guest Access</h2>
+  <p class="lead text-center" data-aos="fade-up">
+    Enjoy exclusive access to the entire 5-acre estate, offering complete privacy and a range of luxurious outdoor amenities. The property includes:
+  </p>
+  <ul class="list-unstyled text-center fs-5" data-aos="fade-up">
+    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Private dock (May–September)</li>
+    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Kayaks and paddleboards</li>
+    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Expansive grounds for recreation and relaxation</li>
+  </ul>
+  <p class="text-center mt-3" data-aos="fade-up">
+    Conveniently located within minutes of local attractions:
+  </p>
+  <ul class="list-unstyled text-center fs-5" data-aos="fade-up">
+    <li><i class="bi bi-geo-alt-fill text-secondary me-2"></i> Lake George – 10 minutes</li>
+    <li><i class="bi bi-geo-alt-fill text-secondary me-2"></i> Saratoga Springs – 15 minutes</li>
+    <li><i class="bi bi-geo-alt-fill text-secondary me-2"></i> Six Flags Great Escape – 10 minutes</li>
+    <li><i class="bi bi-geo-alt-fill text-secondary me-2"></i> West Mountain Ski Area – 5 minutes</li>
+  </ul>
+</section>
+
+<!-- Contact & Booking -->
+<section class="bg-light py-5" id="contact">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="mb-4">Contact & Booking</h2>
+    <p class="fs-5">For availability, rates, or questions, feel free to get in touch:</p>
+    <p class="fs-5 mb-1">
+      <strong>Email:</strong> <a href="mailto:sunsetbay@gmail.com" class="text-decoration-none">sunsetbay@gmail.com</a>
+    </p>
+    <p class="fs-5 mb-1">
+      <strong>Phone:</strong> <a href="tel:19736343681" class="text-decoration-none">(973) 634-3681</a>
+    </p>
+    <p class="text-muted mt-3">Your host is available via phone or text throughout your stay to ensure a seamless experience.</p>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>© 2025 Sunset Bay Rentals — All rights reserved.</p>
+            <p>Follow us on
+                <a href="#" class="text-light">BLANK</a> |
+                <a href="#" class="text-light">IDK?</a>
+            </p>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="imageGalleryModal" tabindex="-1" aria-labelledby="imageGalleryModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered  modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="imageGalleryModalLabel">Gallery</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs mb-4" id="galleryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="indoor-tab" data-bs-toggle="tab"
+                                data-bs-target="#indoor" type="button" role="tab">Interior</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="rooms-tab" data-bs-toggle="tab" data-bs-target="#rooms"
+                                type="button" role="tab">Rooms</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="outdoor-tab" data-bs-toggle="tab" data-bs-target="#outdoor"
+                                type="button" role="tab">Exterior</button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Panes -->
+                   <div class="tab-content mt-3">
+
+  <!-- Indoor Gallery -->
+  <div class="tab-pane fade show active" id="indoor" role="tabpanel">
+    <div id="indoorCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="/5-interior/int-1.png" class="d-block w-100 rounded f" alt="Interior 1"></div>
+        <div class="carousel-item"><img src="/5-interior/int-2.png" class="d-block w-100 rounded f" alt="Interior 2"></div>
+        <div class="carousel-item"><img src="/5-interior/int-3.png" class="d-block w-100 rounded f" alt="Interior 3"></div>
+        <div class="carousel-item"><img src="/5-interior/int-4.png" class="d-block w-100 rounded f" alt="Interior 4"></div>
+        <div class="carousel-item"><img src="/5-interior/int-5.png" class="d-block w-100 rounded f" alt="Interior 5"></div>
+        <div class="carousel-item"><img src="/5-interior/int-6.png" class="d-block w-100 rounded f" alt="Interior 6"></div>
+        <div class="carousel-item"><img src="/5-interior/int-7.png" class="d-block w-100 rounded f" alt="Interior 7"></div>
+        <div class="carousel-item"><img src="/5-interior/int-8.png" class="d-block w-100 rounded f" alt="Interior 8"></div>
+        <div class="carousel-item"><img src="/5-interior/int-9.png" class="d-block w-100 rounded f" alt="Interior 9"></div>
+        <div class="carousel-item"><img src="/5-interior/int-10.png" class="d-block w-100 rounded f" alt="Interior 10"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#indoorCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#indoorCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Rooms Gallery -->
+  <div class="tab-pane fade" id="rooms" role="tabpanel">
+    <div id="roomsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="/5-rooms/room-1.png" class="d-block w-100 rounded f" alt="Room 1"></div>
+        <div class="carousel-item"><img src="/5-rooms/room-2.png" class="d-block w-100 rounded f" alt="Room 2"></div>
+        <div class="carousel-item"><img src="/5-rooms/room-3.png" class="d-block w-100 rounded f" alt="Room 3"></div>
+        <div class="carousel-item"><img src="/5-rooms/room-4.png" class="d-block w-100 rounded f" alt="Room 4"></div>
+        <div class="carousel-item"><img src="/5-rooms/room-5.png" class="d-block w-100 rounded f" alt="Room 5"></div>
+        <div class="carousel-item"><img src="/5-rooms/room-6.png" class="d-block w-100 rounded f" alt="Room 6"></div>
+        <div class="carousel-item"><img src="/5-rooms/room-7.png" class="d-block w-100 rounded f" alt="Room 7"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#roomsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#roomsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Outdoor Gallery -->
+  <div class="tab-pane fade" id="outdoor" role="tabpanel">
+    <div id="outdoorCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="/5-exterior/ext-1.png" class="d-block w-100 rounded f" alt="Exterior 1"></div>
+        <div class="carousel-item"><img src="/5-exterior/ext-2.png" class="d-block w-100 rounded f" alt="Exterior 2"></div>
+        <div class="carousel-item"><img src="/5-exterior/ext-3.png" class="d-block w-100 rounded f" alt="Exterior 3"></div>
+        <div class="carousel-item"><img src="/5-exterior/ext-4.png" class="d-block w-100 rounded f" alt="Exterior 4"></div>
+        <div class="carousel-item"><img src="/5-exterior/ext-5.png" class="d-block w-100 rounded f" alt="Exterior 5"></div>
+        <div class="carousel-item"><img src="/5-exterior/ext-6.png" class="d-block w-100 rounded f" alt="Exterior 6"></div>
+        <div class="carousel-item"><img src="/5-exterior/ext-7.png" class="d-block w-100 rounded f" alt="Exterior 7"></div>
+        <div class="carousel-item"><img src="/5-exterior/ext-8.png" class="d-block w-100 rounded f" alt="Exterior 8"></div>
+        <div class="carousel-item"><img src="/5-exterior/ext-9.png" class="d-block w-100 rounded f" alt="Exterior 9"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#outdoorCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#outdoorCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
