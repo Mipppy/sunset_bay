@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunset Bay 2-Bedroom Rental</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+      background: url('/static/img/2-bedroom-cover.jpg') center/cover no-repeat;
+      background-position: center 35%;
+      color: white;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .carousel-inner img {
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    h2,
+    h4 {
+      color: #2c3e50;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #343a40;
+      color: white;
+      padding: 2rem 0;
+    }
+
+    .nav-tabs .nav-link.active {
+      background-color: #0d6efd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Sunset Bay New York Rentals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#access">Guest Access</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="overview">
+    <div>
+      <h1 data-aos="fade-down">2-Bedroom Walkout Apartment</h1>
+      <p data-aos="fade-up">Comfortable. Private. Scenic. Access to the water, splash island & more.</p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="container py-5" id="overview">
+    <div class="row align-items-center gx-5 gy-4" data-aos="fade-up">
+      <div class="col-md-6">
+        <h2 class="fw-bold">Property Overview</h2>
+        <p class="lead text-muted">A cozy, private 2-bedroom walkout basement apartment with full access to waterfront fun and peaceful surroundings.</p>
+        <ul class="list-unstyled">
+          <li>• Private waterfront with dock</li>
+          <li>• 2-bedroom walkout basement apartment</li>
+          <li>• Private entrance/egress</li>
+          <li>• Grill, covered patio, grassy yard</li>
+          <li>• Kids’ playset and water toys</li>
+          <li>• Sleeps up to 4 guests comfortably</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <!-- Carousel Placeholder -->
+        <div id="apartmentCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active"><img src="/static/img/2-bedroom-1.jpg" class="d-block w-100" alt="Apartment Image 1"></div>
+            <div class="carousel-item"><img src="/static/img/2-bedroom-2.jpg" class="d-block w-100" alt="Apartment Image 2"></div>
+            <div class="carousel-item"><img src="/static/img/2-bedroom-3.jpg" class="d-block w-100" alt="Apartment Image 3"></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#apartmentCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#apartmentCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section class="bg-light py-5" id="amenities">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Amenities</h2>
+      <div class="row gy-4 mb-5">
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="p-4 bg-white shadow-sm rounded">
+            <h4 class="fw-semibold mb-3">Outdoor Amenities</h4>
+            <ul class="list-unstyled">
+              <li>• Shared waterfront</li>
+              <li>• Private dock, splash island</li>
+              <li>• Kayaks, canoe, paddleboards</li>
+              <li>• Grill</li>
+              <li>• Firepit with Adirondack chairs</li>
+              <li>• Patio furniture & picnic tables</li>
+              <li>• Playset and grassy lawn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="p-4 bg-white shadow-sm rounded">
+            <h4 class="fw-semibold mb-3">Indoor Comforts</h4>
+            <ul class="list-unstyled">
+              <li>• 2 bedrooms, 1 bath</li>
+              <li>• Fully stocked kitchen</li>
+              <li>• Coffee station (Keurig & drip)</li>
+              <li>• Dishwasher and microwave</li>
+              <li>• Washer and dryer</li>
+              <li>• Media room</li>
+              <li>• Children’s dinnerware; high chair, exersaucer, and pack n play (on request)</li>
+              <li>• Towels, linens, hair dryers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Access -->
+  <section class="container py-5" id="access">
+    <h2 class="text-center mb-4" data-aos="fade-up">Guest Access</h2>
+    <p class="lead text-center" data-aos="fade-up">Guests have full access to the waterfront and shared outdoor amenities.</p>
+    <ul class="list-unstyled text-center fs-5" data-aos="fade-up">
+      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Private dock and splash island</li>
+      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Kayaks and paddleboards</li>
+    </ul>
+    <p class="text-center mt-3" data-aos="fade-up">Located just minutes from:</p>
+    <ul class="list-unstyled text-center fs-5" data-aos="fade-up">
+      <li><i class="bi bi-geo-alt-fill text-secondary me-2"></i> Lake George – 10 minutes</li>
+      <li><i class="bi bi-geo-alt-fill text-secondary me-2"></i> Saratoga Springs – 15 minutes</li>
+      <li><i class="bi bi-geo-alt-fill text-secondary me-2"></i> Six Flags Great Escape – 10 minutes</li>
+      <li><i class="bi bi-geo-alt-fill text-secondary me-2"></i> West Mountain Ski Area – 5 minutes</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section class="bg-light py-5" id="contact">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="mb-4">Contact & Booking</h2>
+      <p class="fs-5">Have questions or want to book your stay? We’d love to hear from you!</p>
+      <p class="fs-5 mb-1"><strong>Email:</strong> <a href="mailto:sunsetbay@gmail.com" class="text-decoration-none">sunsetbay@gmail.com</a></p>
+      <p class="fs-5 mb-1"><strong>Phone:</strong> <a href="tel:19736343681" class="text-decoration-none">(973) 634-3681</a></p>
+      <p class="text-muted mt-3">We’re happy to help make your stay perfect from start to finish.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>© 2025 Sunset Bay Rentals — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+
+</html>
