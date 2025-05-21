@@ -15,7 +15,7 @@
     }
 
     .hero {
-      background: url('/static/img/2-bedroom-cover.jpg') center/cover no-repeat;
+      background: url('/static/img/lol.png') center/cover no-repeat;
       background-position: center 35%;
       color: white;
       height: 70vh;
@@ -63,6 +63,12 @@
     .nav-tabs .nav-link.active {
       background-color: #0d6efd;
     }
+            .carousel-inner .f {
+            scale:0.9;
+            height:auto;
+            max-height: 80vh;
+            object-fit: contain;
+        }
   </style>
 </head>
 
@@ -90,7 +96,8 @@
   <section class="hero" id="overview">
     <div>
       <h1 data-aos="fade-down">2-Bedroom Walkout Apartment</h1>
-      <p data-aos="fade-up">Comfortable. Private. Scenic. Access to the water, splash island & more.</p>
+                 <button class="btn btn-light mt-4" data-bs-toggle="modal" data-bs-target="#imageGalleryModal">See All
+                Images</button>
     </div>
   </section>
 
@@ -113,9 +120,9 @@
         <!-- Carousel Placeholder -->
         <div id="apartmentCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
           <div class="carousel-inner rounded">
-            <div class="carousel-item active"><img src="/static/img/2-bedroom-1.jpg" class="d-block w-100" alt="Apartment Image 1"></div>
-            <div class="carousel-item"><img src="/static/img/2-bedroom-2.jpg" class="d-block w-100" alt="Apartment Image 2"></div>
-            <div class="carousel-item"><img src="/static/img/2-bedroom-3.jpg" class="d-block w-100" alt="Apartment Image 3"></div>
+            <div class="carousel-item active"><img src="/2-room/3.png" class="d-block w-100" alt="Apartment Image 1"></div>
+            <div class="carousel-item"><img src="/2-interior/5.png" class="d-block w-100" alt="Apartment Image 2"></div>
+            <div class="carousel-item"><img src="/2-exterior/8.png" class="d-block w-100" alt="Apartment Image 3"></div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#apartmentCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -200,7 +207,123 @@
       <p>© 2025 Sunset Bay Rentals — All rights reserved.</p>
     </div>
   </footer>
+ <div class="modal fade" id="imageGalleryModal" tabindex="-1" aria-labelledby="imageGalleryModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered  modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="imageGalleryModalLabel">Gallery</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs mb-4" id="galleryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="indoor-tab" data-bs-toggle="tab"
+                                data-bs-target="#indoor" type="button" role="tab">Interior</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="rooms-tab" data-bs-toggle="tab" data-bs-target="#rooms"
+                                type="button" role="tab">Rooms</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="outdoor-tab" data-bs-toggle="tab" data-bs-target="#outdoor"
+                                type="button" role="tab">Exterior</button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Panes -->
+                    <div class="tab-content mt-3">
+
+                        <!-- Indoor Gallery -->
+                        <div class="tab-pane fade show active" id="indoor" role="tabpanel">
+                            <div id="indoorCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="/2-interior/1.png"
+                                            class="d-block w-100 rounded f" alt="Interior 1"></div>
+                                    <div class="carousel-item "><img src="/2-interior/2.png"
+                                            class="d-block w-100 rounded f" alt="Interior 1"></div>
+                                    <div class="carousel-item "><img src="/2-interior/3.png"
+                                            class="d-block w-100 rounded f" alt="Interior 1"></div>
+                                    <div class="carousel-item "><img src="/2-interior/4.png"
+                                            class="d-block w-100 rounded f" alt="Interior 1"></div>
+                                    <div class="carousel-item "><img src="/2-interior/5.png"
+                                            class="d-block w-100 rounded f" alt="Interior 1"></div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#indoorCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#indoorCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Rooms Gallery -->
+                        <div class="tab-pane fade" id="rooms" role="tabpanel">
+                            <div id="roomsCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="/2-room/1.png"
+                                            class="d-block w-100 rounded f" alt="Room 1"></div>
+                                    <div class="carousel-item"><img src="/2-room/2.png"
+                                            class="d-block w-100 rounded f" alt="Room 1"></div>
+                                    <div class="carousel-item "><img src="/2-room/3.png"
+                                            class="d-block w-100 rounded f" alt="Room 1"></div>
+                                    <div class="carousel-item "><img src="/2-room/4.png"
+                                            class="d-block w-100 rounded f" alt="Room 1"></div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#roomsCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#roomsCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Outdoor Gallery -->
+                        <div class="tab-pane fade" id="outdoor" role="tabpanel">
+                            <div id="outdoorCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="/2-exterior/1.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                    <div class="carousel-item "><img src="/2-exterior/2.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                    <div class="carousel-item "><img src="/2-exterior/3.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                    <div class="carousel-item "><img src="/2-exterior/4.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                    <div class="carousel-item "><img src="/2-exterior/5.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                    <div class="carousel-item "><img src="/2-exterior/6.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                    <div class="carousel-item "><img src="/2-exterior/7.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                    <div class="carousel-item "><img src="/2-exterior/8.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#outdoorCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#outdoorCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

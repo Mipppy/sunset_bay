@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +12,7 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f9fa;
     }
+
     .hero {
       background: url('/static/img/main_bg.png') center center/cover no-repeat;
       color: white;
@@ -20,32 +22,37 @@
       justify-content: center;
       text-align: center;
     }
+
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     }
+
     footer {
       background-color: #343a40;
       color: white;
       padding: 2rem 0;
     }
+
     .property img {
       width: 100%;
       height: auto;
       border-radius: 5px;
     }
-    .card:hover {
-  transform: translateY(-3px);
-  transition: transform 0.2s ease-in-out;
-}
-.card img {
-  object-fit: cover;
-  height: 250px;
-}
 
+    .card:hover {
+      transform: translateY(-3px);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card img {
+      object-fit: cover;
+      height: 250px;
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -73,65 +80,66 @@
 
   <!-- Properties Section -->
   <!-- Properties Section -->
-<section class="container py-5" id="properties">
-  <h2 class="text-center mb-4" data-aos="fade-up">Our Vacation Rentals</h2>
-  <div class="row g-4">
+  <section class="container py-5" id="properties">
+    <h2 class="text-center mb-4" data-aos="fade-up">Our Vacation Rentals</h2>
+    <div class="row g-4">
 
-    <!-- Property Card -->
-    <div class="col-md-6 col-lg-6" data-aos="fade-up">
-      <a href="6-bedroom.html" class="card border-0 shadow-sm h-100 text-decoration-none text-dark">
-        <img src="static/img/6-bedroom-cover.png" class="card-img-top" alt="6-Bedroom Waterfront">
-        <div class="card-body bg-dark text-white">
-          <h5 class="card-title">6-Bedroom Waterfront Vacation Rental</h5>
-          <p class="card-text">(5-bedroom house + attached 1-bedroom apartment)</p>
-        </div>
-      </a>
-    </div>
+      <!-- Property Card -->
+      <div class="col-md-6 col-lg-6" data-aos="fade-up">
+        <a href="6-bedroom.html" class="card border-0 shadow-sm h-100 text-decoration-none text-dark">
+          <img src="static/img/6-bedroom-cover.png" class="card-img-top" alt="6-Bedroom Waterfront">
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">6-Bedroom Waterfront Vacation Rental</h5>
+            <p class="card-text">(5-bedroom house + attached 1-bedroom apartment)</p>
+          </div>
+        </a>
+      </div>
 
-    <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-      <a href="5-bedroom.html" class="card border-0 shadow-sm h-100 text-decoration-none text-dark">
-        <img src="/static/img/camp_main.png" class="card-img-top" alt="5-Bedroom Waterfront">
-        <div class="card-body bg-dark text-white">
-          <h5 class="card-title">5-Bedroom Waterfront Vacation Rental</h5>
-        </div>
-      </a>
-    </div>
+      <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <a href="5-bedroom.html" class="card border-0 shadow-sm h-100 text-decoration-none text-dark">
+          <img src="/static/img/camp_main.png" class="card-img-top" alt="5-Bedroom Waterfront">
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">5-Bedroom Waterfront Vacation Rental</h5>
+          </div>
+        </a>
+      </div>
 
-    <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-      <a href="2-bedroom.html" class="card border-0 shadow-sm h-100 text-decoration-none text-dark">
-        <img id="april_fools!" src="/static/img/camp_basement_main.png" class="card-img-top" alt="2-Bedroom Apartment">
-        <div class="card-body bg-dark text-white">
-          <h5 class="card-title">2-Bedroom Waterfront Vacation Rental Apartment</h5>
-        </div>
-        <script>
+      <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <a href="2-bedroom.html" class="card border-0 shadow-sm h-100 text-decoration-none text-dark">
+          <img id="april_fools!" src="/static/img/camp_basement_main.png" class="card-img-top"
+            alt="2-Bedroom Apartment">
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">2-Bedroom Waterfront Vacation Rental Apartment</h5>
+          </div>
+          <script>
             const today = new Date()
             if (today.getMonth() === 3 && today.getDate() === 1) {
-                document.getElementById("april_fools!").src = "/static/img/camp_basement_main_lol.png"
+              document.getElementById("april_fools!").src = "/static/img/camp_basement_main_lol.png"
             }
-        </script>
-      </a>
+          </script>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <a href="1-bedroom.html" class="card border-0 shadow-sm h-100 text-decoration-none text-dark">
+          <img src="static/img/apartment_main.png" class="card-img-top" alt="1-Bedroom Apartment">
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">1-Bedroom Waterfront Vacation Rental Apartment</h5>
+          </div>
+        </a>
+      </div>
+
     </div>
+  </section>
 
-    <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
-      <a href="1-bedroom.html" class="card border-0 shadow-sm h-100 text-decoration-none text-dark">
-        <img src="static/img/apartment_main.png" class="card-img-top" alt="1-Bedroom Apartment">
-        <div class="card-body bg-dark text-white">
-          <h5 class="card-title">1-Bedroom Waterfront Vacation Rental Apartment</h5>
-        </div>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
 
   <!-- Footer -->
   <footer class="text-center">
     <div class="container">
       <p class="mb-0">© 2025 Sunset Bay Rentals. All rights reserved.</p>
-      <p class="mb-0">Follow us on 
-        <a href="#" class="text-light">BLANK</a> | 
+      <p class="mb-0">Follow us on
+        <a href="#" class="text-light">BLANK</a> |
         <a href="#" class="text-light">IDK?</a>
       </p>
     </div>
@@ -144,4 +152,5 @@
     AOS.init();
   </script>
 </body>
+
 </html>

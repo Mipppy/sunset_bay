@@ -63,6 +63,14 @@
         .nav-tabs .nav-link.active {
             background-color: #0d6efd;
         }
+
+        .modal .carousel-inner img {
+            width: 100%;
+            max-height: 80vh;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+        }
     </style>
 </head>
 
@@ -102,8 +110,7 @@
         <div class="row align-items-center gx-5 gy-4" data-aos="fade-up">
             <div class="col-md-6">
                 <h2 class="fw-bold">Property Overview</h2>
-                <p class="lead text-muted">Your private 1-bedroom riverside apartment, part of a 6-bedroom estate,
-                    offers cozy living with luxury amenities and shared outdoor access.</p>
+                <p class="lead text-muted">Your private 1-bedroom riverside apartment offers cozy living with luxury amenities and shared outdoor access.</p>
                 <ul class="list-unstyled">
                     <li>• 600' of private waterfront with dock</li>
                     <li>• 1-bedroom apartment</li>
@@ -114,11 +121,13 @@
             <div class="col-md-6">
                 <div id="oneBedroomCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
                     <div class="carousel-inner rounded">
-                        <div class="carousel-item active"><img src="/static/img/apartment-main-3.png"
+                        <div class="carousel-item active"><img src="/static/img/2b-g.png"
                                 class="d-block w-100" alt="Image 1"></div>
-                        <div class="carousel-item"><img src="/static/img/apartment-main-2.png" class="d-block w-100"
+                        <div class="carousel-item"><img src="/static/img/2b-g1.png" class="d-block w-100"
                                 alt="Image 2"></div>
-                        <div class="carousel-item"><img src="/static/img/apartment-main-1.png" class="d-block w-100"
+                        <div class="carousel-item"><img src="/static/img/2b-g2.png" class="d-block w-100"
+                                alt="Image 3"></div>
+                        <div class="carousel-item"><img src="/static/img/2b-g3.png" class="d-block w-100"
                                 alt="Image 3"></div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#oneBedroomCarousel"
@@ -246,13 +255,13 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="/1-interior/1.png"
                                             class="d-block w-100 rounded f" alt="Interior 1"></div>
-                                    <div class="carousel-item active"><img src="/1-interior/2.png"
+                                    <div class="carousel-item "><img src="/1-interior/2.png"
                                             class="d-block w-100 rounded f" alt="Interior 1"></div>
-                                    <div class="carousel-item active"><img src="/1-interior/3.png"
+                                    <div class="carousel-item "><img src="/1-interior/3.png"
                                             class="d-block w-100 rounded f" alt="Interior 1"></div>
-                                    <div class="carousel-item active"><img src="/1-interior/4.png"
+                                    <div class="carousel-item "><img src="/1-interior/4.png"
                                             class="d-block w-100 rounded f" alt="Interior 1"></div>
-                                    <div class="carousel-item active"><img src="/1-interior/5.png"
+                                    <div class="carousel-item"><img src="/1-interior/5.png"
                                             class="d-block w-100 rounded f" alt="Interior 1"></div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#indoorCarousel"
@@ -272,12 +281,12 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="/1-room/1.png"
                                             class="d-block w-100 rounded f" alt="Room 1"></div>
-                                    <div class="carousel-item active"><img src="/1-room/2.png"
-                                            class="d-block w-100 rounded f" alt="Room 1"></div>
-                                    <div class="carousel-item active"><img src="/1-room/3.png"
-                                            class="d-block w-100 rounded f" alt="Room 1"></div>
-                                    <div class="carousel-item active"><img src="/1-room/4.png"
-                                            class="d-block w-100 rounded f" alt="Room 1"></div>
+                                    <div class="carousel-item "><img src="/1-room/2.png" class="d-block w-100 rounded f"
+                                            alt="Room 1"></div>
+                                    <div class="carousel-item "><img src="/1-room/3.png" class="d-block w-100 rounded f"
+                                            alt="Room 1"></div>
+                                    <div class="carousel-item "><img src="/1-room/4.png" class="d-block w-100 rounded f"
+                                            alt="Room 1" style="background-size: 0.2;"></div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#roomsCarousel"
                                     data-bs-slide="prev">
@@ -296,11 +305,15 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="/1-exterior/1.png"
                                             class="d-block w-100 rounded f" alt="Exterior 1"></div>
-                                    <div class="carousel-item active"><img src="/1-exterior/2.png"
+                                    <div class="carousel-item "><img src="/1-exterior/2.png"
                                             class="d-block w-100 rounded f" alt="Exterior 1"></div>
-                                    <div class="carousel-item active"><img src="/1-exterior/3.png"
+                                    <div class="carousel-item "><img src="/1-exterior/3.png"
                                             class="d-block w-100 rounded f" alt="Exterior 1"></div>
-                                    <div class="carousel-item active"><img src="/1-exterior/4.png"
+                                    <div class="carousel-item "><img src="/1-exterior/4.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                    <div class="carousel-item "><img src="/1-exterior/5.png"
+                                            class="d-block w-100 rounded f" alt="Exterior 1"></div>
+                                    <div class="carousel-item "><img src="/1-exterior/6.png"
                                             class="d-block w-100 rounded f" alt="Exterior 1"></div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#outdoorCarousel"
